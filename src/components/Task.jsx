@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -30,6 +29,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
                     readOnly={true}
                     name="title"
                     placeholder="Input title"
+                    style={{ textOverflow: 'ellipsis' }}
                 />
             </label>
 
